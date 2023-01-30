@@ -6,7 +6,7 @@ import { FollowerModalList } from "./FollowerModalList";
 import { FollowingModalList } from "./FollowingModalList";
 import { SubGreddit } from "./SubGreddit";
 import SearchIcon from "@mui/icons-material/Search";
-
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 
 const Content = ({ followers, handleDelete, followings, handleDelete_ }) => {
   // const data = JSON.parse(localStorage.getItem("token"));
@@ -24,6 +24,46 @@ const Content = ({ followers, handleDelete, followings, handleDelete_ }) => {
   return (
     <div className="content">
       <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><ArrowDropDownCircleIcon fontSize='large' /></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <button class="nav-link active" aria-current="page" href="#">
+                    Profile Page
+                  </button>
+                </li>
+                <li class="nav-item">
+                <button class="nav-link active" aria-current="page" href="#">
+                    My Sub-Greddit
+                  </button>
+                </li>
+                <li class="nav-item">
+                <button class="nav-link active" aria-current="page" href="#">
+                    Sub-Greddit
+                  </button>
+                </li>
+                <li class="nav-item">
+                <button class="nav-link active" aria-current="page" href="#">
+                   Saved Posts
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <div class="card">
           <div>
             <div
