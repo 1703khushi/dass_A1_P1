@@ -181,12 +181,6 @@ margin-bottom: 2rem;
   height:250px;
   /* border: none; */
   /* opacity: 50%; */
-  background: rgb(211,227,222);
-background: radial-gradient(circle, rgba(211,227,222,0.9836309523809523) 0%, rgba(163,127,59,0.6699054621848739) 41%);
-  transition: 1s ease-in-out;
-}
-.card-img-top:hover{
-  height: 300px;
   box-shadow: 0px 1px 100px rgb(24, 112, 195);
   background: rgb(211,227,222);
 background: radial-gradient(circle, rgba(211,227,222,0.9836309523809523) 0%, rgba(163,127,59,0.9136029411764706) 41%);
